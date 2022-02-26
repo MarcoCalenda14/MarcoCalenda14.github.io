@@ -5,43 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marco Calenda - Github.io</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <header class="navbar">
-        <img src="me.png" class="logo" alt="logo">
         <div class="navbar__info">
-            <div class="navbar__info__title">Marco Calenda</div>
-            <div class="navbar__info__subtitle">Computer Science student at <a href="https://www.unisa.it/">University of Salerno</a></div>
+            <div class="navbar__info__logo">
+                <img src="me.png" alt="logo">
+            </div>
+            <div class="navbar__info__titleSubtitle">
+                <div class="navbar__info__titleSubtitle__title">Marco Calenda</div>
+                <div class="navbar__info__titleSubtitle__subtitle">Computer Science student at <a class="linkUnderline" href="https://www.unisa.it/">University of Salerno</a></div>
+            </div>
         </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item"><a class="linkUnderline" href="index.html">Projects</a></li>
+            <li class="navbar__menu__item"><a class="linkUnderline" href="whoami.html">About me</a></li>
+            <li class="navbar__menu__item"><a class="linkUnderline" href="contacts.html">Contacts</a></li>
+        </ul>
     </header>
     <main class="container">
-        <ul class="projects">
-            <li class="projects__item">
-                <img src="c.png" class="langLogo" alt="langLogo">
-                <a href="https://github.com/MarcoCalenda14/Progetto-Compilatori">
-                    <div class="project__item__title">MyFun to C compiler</div>
-                    <div class="project__item__subtitle">Project of the "Compilers" exam. Made with JFlex Lexer, JavaCup Parser and visitor design pattern.</div>
-                </a>
-            </li>
-
-            <li class="projects__item">
-                <img src="c.png" class="langLogo" alt="langLogo">
-                <a href="https://github.com/FDema98/Verismart">
-                    <div class="project__item__title">Verismart</div>
-                    <div class="project__item__subtitle">My bachelor degree's thesis. Transition to Python 3 and unification of the lazyCSeq and Verismart tools.</div>
-                </a>
-            </li>
-
-            <li class="projects__item">
-                <img src="c.png" class="langLogo" alt="langLogo">
-                <a href="https://github.com/Databasers/BachecaUnisa">
-                    <div class="project__item__title">Bacheca Unisa</div>
-                    <div class="project__item__subtitle">Project of the "Software engeneering" exam. MVC web app to improve tutoring activities in University of Salerno.</div>
-                </a>
-            </li>
-        </ul>
+        <div class="projects">
+            <a class="projects__item" href="https://github.com/MarcoCalenda14/Progetto-Compilatori">
+                <div class="projects__item__info">
+                    <!-- <img src="java.png" class="projects__item__info__logo" alt="langLogo"> -->
+                    <div class="projects__item__info__subtitle">Project of the "Compilers" exam. Made with JFlex Lexer, JavaCup Parser and visitor design pattern.</div>
+                    <div class="projects__item__info__subtitle" style="text-align: center;">-- view Github Repo --</div>
+                    <div class="projects__item__info__title linkUnderline">MyFun to C compiler</div>
+                </div>
+            </a>
+            <a class="projects__item" href="https://github.com/FDema98/Verismart">
+                <div class="projects__item__info">
+                    <!-- <img src="python.png" class="projects__item__info__logo" alt="langLogo"> -->
+                    <div class="projects__item__info__subtitle">My bachelor degree's thesis. Transition to Python 3 and unification of the lazyCSeq and Verismart tools.</div>
+                    <div class="projects__item__info__subtitle" style="text-align: center;">-- view Github Repo --</div>
+                    <div class="projects__item__info__title linkUnderline">Verismart</div>
+                </div>
+            </a>
+            <a class="projects__item" href="https://github.com/Databasers/BachecaUnisa">
+                <div class="projects__item__info">
+                    <!-- <img src="java.png" class="projects__item__info__logo" alt="langLogo"> -->
+                    <div class="projects__item__info__subtitle">Project of the "Software engeneering" exam. MVC web app to improve tutoring activities in University of Salerno.</div>
+                    <div class="projects__item__info__subtitle" style="text-align: center;">-- view Github Repo --</div>
+                    <div class="projects__item__info__title linkUnderline">Bacheca Unisa</div>
+                </div>
+            </a>
+        </div>
     </main>
     <footer>
     </footer>
