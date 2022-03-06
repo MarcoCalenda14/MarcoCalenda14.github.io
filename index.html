@@ -1,51 +1,88 @@
 <html lang="it">
-<head><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Marco Calenda - Github.io</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <title>Marco Calenda</title>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1 class="medium-text"><a class="home" href="index.html">Marco Calenda</a></h1>
+      <div class="card">
+        <div class="card__main">
+          <img class="photo" src="img/me.png" alt="marco_calenda_photo">
+          <div class="name medium-text">Marco Calenda</div>
+          <div class="divider"></div>
+          <div class="role small-text">Software Engineer</div>
         </div>
-        
-        <a class = "projects" href="home">     
-            <h1 class="big-text">Projects</h1>
-        </a>
-        <a class = "aboutMe" href="home">
-            <h1 class="big-text">About Me</h1>
-        </a>
+        <div class="card__links">
+          <a class="link link-linkedin" href="https://www.linkedin.com/in/marco-calenda-315062193/"></a>
+          <a class="link link-twitter" href="https://twitter.com/marco_calenda"></a>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__text">
+          <div class="title big-text">Hello</div>
+          <div class="subtitle medium-text">Checkout my resume and projects!</div>
+        </div>
+        <div class="info__buttons small-text">
+          <div class="button button-fill">Resume</div>
+          <div class="button button-noFill">Projects</div>
+        </div>
+        <div class="info__parag small-text">Master computer science student at <a href="http://unisa.it">University of Salerno</a></div>
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script type="text/javascript">
+      $(document).ready(function() {
 
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous">
-    </script>
+        $('.projects').click(function() {
+          if (!($(this).hasClass('projects-open'))){
+            // Projects
+            $(this).toggleClass('projects-open');
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".home").hover(
-            function() {
-                var $this = $(this);
-                $this.data('defaultText', $this.text());
-                $this.text("Home");
-            },
-            function() {
-                var $this = $(this);
-                $this.text($this.data('defaultText'));
-            });
+            // Logo  
+            $('.logo').toggleClass('logo-open');
+            $('.logo_title').html("Home");
+
+            // AboutMe
+            $('.aboutMe').toggleClass('closed');
+          }
         });
-    </script>
 
+        $('.aboutMe').click(function() {
+          if (!($(this).hasClass('aboutMe-open'))){
+            // AboutMe
+            $(this).toggleClass('aboutMe-open');
 
-</body>
+            // Logo
+            $('.logo').toggleClass('logo-open');
+            $('.logo_title').html("Home");
+
+            // Projects
+            $('.projects').toggleClass('closed');
+          }
+        });
+
+        $('.logo').click(function() {
+          if ($(this).hasClass('logo-open')){
+            // Logo
+            $(this).toggleClass('logo-open')
+            $(this).find('.logo_title').html("Hi, I'm Marco");
+
+            // Projects
+            $('.projects').removeClass('closed');
+            $('.projects').removeClass('projects-open');
+
+            // AboutMe
+            $('.aboutMe').removeClass('closed');
+            $('.aboutMe').removeClass('aboutMe-open');
+          }
+        });
+      });
+    </script> -->
+  </body>
 </html>
