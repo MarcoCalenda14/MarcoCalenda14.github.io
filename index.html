@@ -2,14 +2,21 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700" rel="stylesheet"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Marco Calenda</title>
   </head>
   <body>
+    <div class="bg">
+      <div class="bg-1"></div>
+      <div class="bg-2"></div>
+    </div>
     <div class="container">
       <div class="card">
         <div class="card__main">
@@ -35,7 +42,10 @@
         <div class="info__parag small-text">Master computer science student at <a href="http://unisa.it">University of Salerno</a></div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      import Swup from 'swup';
+      const swup = new Swup();
+    </script>
     <!-- <script type="text/javascript">
       $(document).ready(function() {
 
